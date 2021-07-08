@@ -50,7 +50,7 @@ Run the hello-world playbook:
 
 Edit Ansible Vault:
 
-`docker run -it --volume "${PWD}":/playbooks:ro --volume ~/.ssh:/root/.ssh:ro --rm acrawly/ansible-runner:latest ansible-vault edit inventory/group_vars/all/vault`
+`docker run -it --volume "${PWD}":/playbooks:rw --volume ~/.ssh:/root/.ssh:ro --rm acrawly/ansible-runner:latest ansible-vault edit inventory/group_vars/all/vault`
 
 View Ansible Vault:
 
